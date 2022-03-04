@@ -1,3 +1,162 @@
 body{
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 0.35px;
     font-family: 'Poppins';
+}
+
+.logo-font{
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: left;    
+}
+.logo-style{
+    width: 166px;
+    height: 54px;
+    margin-left: 34px;
+    color: #ffff;
+}
+.font-item-active{
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.nav-item{
+    height: 56px;
+    width: 300px;
+    left: 0px;
+    top: 0px;
+}
+.nav-icon{
+    height: 16.666667938232422px;
+    width: 16.84775161743164px;
+    left: 2.2168102264404297px;
+    top: 1.666015625px;
+    margin-right: 22px;
+}
+.s5-default{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.body-default{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.font-title-page{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.body-text-default{
+    color: #575757;
+}
+
+.bg-sidebar{
+    background-color:#173E48;
+}
+
+.user-resume{
+    height: 235px;
+    width: 818px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+
+}
+
+.small-shadow{
+    box-shadow: 0px 1px 3px 0px #0000000A;
+}
+
+.sd3-default{
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.caption-default{
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sd4-default{
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.btn-default{
+    height: 40px;
+    width: 234px;
+    left: 527px;
+    top: 24px;
+    border-radius: 4px;
+    padding: 8px, 32px, 8px, 24px;
+}
+
+.btn-text-default{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.ord-text{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.basic-radius{
+    border-radius: 4px;
+}
+
+table{
+    width: 100%;
+}
+th, td{
+    padding: 0px 20px 0px 0px;
+    text-align: left;
 }

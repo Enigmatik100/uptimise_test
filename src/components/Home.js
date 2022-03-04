@@ -11,11 +11,11 @@ const Home = () => {
 
     return (
         <Router>
-            <div className="relative min-h-screen flex">
+            <div className="flex">
                 <Sidebar />
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
-                    <Route path="/absence" element={<Absence />} />
+                    <Route path="/absences" element={<Absence />} />
                     <Route path="/note-de-frais" element={<NoteDeFrais />} />
                     <Route path="/validation" element={<Validation />} />
                 </Routes>

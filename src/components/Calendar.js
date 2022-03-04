@@ -3,49 +3,44 @@ import Paper from '@mui/material/Paper';
 import { ViewState } from '@devexpress/dx-react-scheduler';
 import {
     Scheduler,
-    WeekView,
     Appointments,
     Toolbar,
-    ViewSwitcher,
     MonthView,
-    DayView,
     DateNavigator,
-    TodayButton
+    ViewSwitcher,
+    DayView,
 } from '@devexpress/dx-react-scheduler-material-ui';
-
+import { TodayButton } from '@devexpress/dx-react-scheduler-material-ui';
 import { appointments } from '../Data/appointments-data';
 import moment from 'moment';
 
-const formatDayScaleDate = (date, options) => {
-    const momentDate = moment(date);
-    const { weekday } = options;
-    return momentDate.format(weekday ? 'dddd' : 'D');
-};
+
 
 const Calendar = () => {
-    const [state, setState] = useState({
+    const [calendarData, setCalendarData] = useState({
         data: appointments,
-        currentViewName: 'work-week',
+        currentViewName: 'Month',
+        currentDate: new Date()
     })
+    const { data, currentViewName, currentDate } = calendarData;
 
-    const currentViewNameChange = (currentViewName) => {
-        setState({ currentViewName });
-    };
-
-    const { data, currentViewName } = state;
+    const TodayCustomButton = () => {
+        return (
+            <button onClick={() => setCalendarData({data: appointments, currentViewName: 'Day', currentDate: new Date()})}> Ajourd'hui </button>
+        )
+    }
+ 
 
     return (
         <Paper>
-            <Scheduler
-                data={data}
-            >
-                <ViewState
-                    defaultCurrentDate={new Date()}
-                />
-                <MonthView />
+            <Scheduler data={data} locale="fr-FR" >
+                <ViewState defaultCurrentDate={new Date()}/>
+                <MonthView name='Month'/>
+                <DayView name='Day'/>
                 <Toolbar />
                 <DateNavigator />
-                <TodayButton />
+                <TodayButton buttonComponent={TodayCustomButton} />
+                <ViewSwitcher />
                 <Appointments />
             </Scheduler>
         </Paper>
